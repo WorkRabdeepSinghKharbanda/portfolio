@@ -44,7 +44,7 @@ $(document).ready(function () {
   setInterval(() => {
     imgFolder[currentIndex].classList.add("fade-out");
     updateImages();
-  }, 2000);
+  }, 5000);
 
   // typing animation script
   new Typed(".typing", {

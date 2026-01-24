@@ -309,7 +309,7 @@ section .title::after{
 .stepper-middle-content div:nth-child(1) {
     border: 1px solid #C7C7C7;
     border-style: solid ;
-    min-height: 1210px;
+    min-height: 2200px;
     height: auto;
     left: 20px;
     top: 20px;
@@ -378,7 +378,7 @@ section .title::after{
 }
 .uniqode-sde-intern > span:nth-child(1) {
     left: -37px;
-    top: 1000px;
+    top: 1990px;
 }
 
 

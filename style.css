@@ -336,6 +336,11 @@ section .title::after{
 }
 
 
+.uniqode-sde,
+.uniqode-sde-intern {
+    position: relative;
+}
+
 .uniqode-sde > span:nth-child(1),
 .uniqode-sde-intern > span:nth-child(1) {
     height: 20px;
@@ -361,6 +366,8 @@ section .title::after{
     font-weight: 800;
     line-height: 24px;
     position: absolute;
+    left: -37px;
+    top: 20px;
 }
 
 .uniqode-sde > span:nth-child(1)::after,
@@ -370,15 +377,6 @@ section .title::after{
     width: 12px;
     background-color: #16222F;
     border-radius: 50%;
-}
-
-.uniqode-sde > span:nth-child(1) {
-    left: -37px;
-    top: 20px;
-}
-.uniqode-sde-intern > span:nth-child(1) {
-    left: -37px;
-    top: 1990px;
 }
 
 

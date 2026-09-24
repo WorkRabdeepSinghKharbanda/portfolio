@@ -183,49 +183,88 @@
               <span class="d-none d-lg-block"></span>
               <div class="d-flex justify-content-between pb-3">
                 <h4>Software Development Engineer 2</h4>
-                <h5>Aug 2022 – Present</h5>
+                <h5>Jan 2025 – Present</h5>
               </div>
               <div class="border bg-secondary bg-opacity-25 rounded p-3">
                 <h5 class="ms-2">
-                  <strong>Webhook Processing & Retry System - Serverless
-                    Architecture</strong> -
-                  <i>AWS Lambda, SQS FIFO, DynamoDB, EventBridge, OpenSearch,
-                    Django, Python, Celery, HMAC Security, Datadog, Angular</i>
+                  <strong>Near-Real-Time Event Fan-Out Platform for External
+                    Integrations</strong> -
+                  <i>AWS Lambda, Kinesis, DynamoDB, EventBridge Scheduler,
+                    Node.js, Django, Terraform, OpenSearch</i>
                 </h5>
                 <ul>
                   <li>
-                    Architected and implemented <strong>fault-tolerant webhook
-                      delivery
-                      system</strong> handling reliable event processing
-                    from Django server to external endpoints with
-                    <strong>exponential
-                      backoff retry strategy (15min to 72hrs)</strong>,
-                    exactly-once delivery guarantees, and auto-deactivation of
-                    failing endpoints after 7 days with Celery-based
-                    email notifications
+                    Architected a <strong>near real time event fan-out
+                      pipeline</strong> on AWS Kinesis + Lambda, routing events
+                    to 5+ external platforms (Meta, Google, Salesforce,
+                    HubSpot, Dynamics) in parallel via isolated per-platform
+                    workers. Cut lead-sync latency from
+                    <strong>15min cron polling to under 10sec</strong> and
+                    reduced new integration onboarding to a single mapper
+                    addition.
                   </li>
                   <li>
-                    Built <strong>event-driven pipeline</strong> using
-                    <strong>SQS FIFO queues</strong> for
-                    ordered processing, Lambda functions for
-                    webhook execution, DynamoDB for retry metadata storage with
-                    TTL cleanup, and EventBridge for
-                    scheduled retry orchestration with comprehensive dashboard
-                    for webhook management
+                    Built reusable <strong>plug &amp; play reliability
+                      modules</strong> (idempotency, circuit breaker,
+                    exponential backoff retry, structured logging) shared
+                    across all workers using DynamoDB and EventBridge
+                    Scheduler, cutting integration delivery failure rate by
+                    <strong>~40%</strong>, with zero custom retry code per new
+                    integration.
                   </li>
                   <li>
-                    Implemented comprehensive observability with
-                    <strong>OpenSearch
-                      append-only logging</strong>, user dashboard for
-                    webhook monitoring/manual triggering/historical logs
-                    viewing, <strong>HMAC-based signature verification</strong>
-                    for
-                    security, and <strong>Datadog monitoring with DLQ fallback
-                      handling</strong>
+                    Scaled pipeline on AWS Kinesis On-Demand and serverless
+                    Lambda concurrency to handle
+                    <strong>4,000+ records per invocation wave</strong> with
+                    auto scaling throughput and zero capacity planning
+                    DynamoDB on-demand billing for bursty retry/log workloads.
                   </li>
                 </ul>
               </div>
               <div class="border bg-secondary bg-opacity-25 rounded p-3 mt-4">
+                <h5 class="ms-2">
+                  <strong>Webhook Processing & Retry System</strong> -
+                  <i>AWS Lambda, Kinesis, DynamoDB, EventBridge Scheduler,
+                    Node.js, Django, Terraform, OpenSearch</i>
+                </h5>
+                <ul>
+                  <li>
+                    Architected <strong>fault-tolerant webhook delivery
+                      system</strong> on <strong>AWS Lambda</strong>
+                    processing events from Django to external endpoints with
+                    <strong>exponential backoff retry (15min–72hrs)</strong>
+                    and exactly-once delivery for
+                    <strong>72M+ documents</strong>, including
+                    auto-deactivation of failing endpoints after 7 days with
+                    Celery email alerts.
+                  </li>
+                  <li>
+                    Built <strong>event-driven pipeline</strong> using
+                    <strong>SQS FIFO</strong> for ordered processing,
+                    <strong>Lambda</strong> for webhook execution, and
+                    <strong>DynamoDB</strong> + <strong>EventBridge
+                      Scheduler</strong> for TTL-based retry metadata and
+                    scheduled retry orchestration.
+                  </li>
+                  <li>
+                    Delivered <strong>Angular dashboard</strong> for webhook
+                    monitoring, manual triggering, and log history, backed by
+                    <strong>OpenSearch</strong> append-only logging,
+                    <strong>HMAC signature verification</strong>, and
+                    <strong>Datadog</strong> monitoring with
+                    <strong>DLQ</strong> fallback.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="uniqode-sde pt-5">
+              <span class="d-none d-lg-block"></span>
+              <div class="d-flex justify-content-between pb-3">
+                <h4>Software Development Engineer 1</h4>
+                <h5>Aug 2022 – Dec 2024</h5>
+              </div>
+              <div class="border bg-secondary bg-opacity-25 rounded p-3">
                 <h5 class="ms-2">
                   <strong>AI-Powered Digital Business Card Scanner & Contact
                     Management</strong> -
@@ -234,27 +273,26 @@
                 </h5>
                 <ul>
                   <li>
-                    Developed end-to-end business card digitization feature
-                    allowing users to capture/upload physical business
-                    cards through PWA, leveraging <strong>OpenAI Vision
-                      API</strong> for OCR text
-                    extraction and data parsing with
-                    intelligent field mapping and validation
+                    Drove adoption of the AI-powered scanning feature to
+                    generate <strong>50,000+ contact leads</strong>,
+                    delivering an end-to-end pipeline from image capture
+                    through OCR extraction, enrichment, and CRUD-based
+                    contact management with search, filter, and update
+                    capabilities.
                   </li>
                   <li>
-                    Integrated ZoomInfo API for contact enrichment to fetch
-                    additional professional details (company info,
-                    social profiles, job history) and built comprehensive
-                    contact management system with CRUD operations
-                    and real-time synchronization
+                    Integrated <strong>ZoomInfo API</strong> for contact
+                    enrichment to fetch additional professional details
+                    (company info, social profiles, job history) and built
+                    comprehensive contact management system with CRUD
+                    operations and real-time synchronization.
                   </li>
                   <li>
-                    Built seamless user experience from card capture to contact
-                    storage with image preprocessing, <strong>AI-powered
-                      data extraction pipeline, enrichment workflow</strong>,
-                    and intuitive
-                    contact management interface with search,
-                    filter, and update capabilities
+                    Built seamless user experience from card capture to
+                    contact storage with image preprocessing,
+                    <strong>AI-powered data extraction pipeline</strong>,
+                    enrichment workflow, and intuitive contact management
+                    interface with search, filter, and update capabilities.
                   </li>
                 </ul>
               </div>
